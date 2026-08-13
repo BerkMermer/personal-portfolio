@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berk Coşkun Mermer | Backend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'portfolyo/css/portfolio.css' %}">
+</head>
+<body>
+
+    <div id="preloader" aria-hidden="true">
+        <div class="loader-ring"></div>
+    </div>
+
+    <div class="ambient" aria-hidden="true">
+        <span class="orb orb-a"></span>
+        <span class="orb orb-b"></span>
+        <span class="orb orb-c"></span>
+    </div>
+
+    <header class="navbar-custom" id="navbar">
+        <div class="container">
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Menüyü aç">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="active">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#skills">Yetenekler</a></li>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1 class="hero-name hero-line">Berk Coşkun Mermer</h1>
+                    <div class="hero-role typewriter-text hero-line"
+                         data-words='["Backend Developer", "Bilgisayar Mühendisliği Öğrencisi", "Yazılım Mühendisi Adayı"]'
+                         data-wait="2500"></div>
+                    <p class="hero-bio hero-line">
+                        Backend mimarileri ve veri bilimine odaklanan bir bilgisayar mühendisliği öğrencisiyim. Python ve Java ekosistemlerinde sürdürülebilir, ölçeklenebilir sistemler üretiyorum.
+                    </p>
+                    <div class="hero-actions hero-line">
+                        <a href="#projects" class="btn btn-primary">Projeleri Gör <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">İletişime Geç</a>
+                    </div>
+                    <div class="hero-social hero-line">
+                        <a href="https://github.com/BerkMermer" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/berkcoskunmermer/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:mermerberkx@gmail.com" aria-label="E-posta"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual" id="heroVisual">
+                    <div class="hero-photo-frame">
+                        <img class="hero-photo" src="{% static 'portfolyo/berk.jpeg' %}" alt="Berk Coşkun Mermer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">01</span>
+                    <h2 class="section-title">Hakkımda</h2>
+                </div>
+                <div class="about-panel reveal-item">
+                    <p>
+                        Bilgisayar mühendisliği eğitimime teorik olarak güçlü bir başlangıç yaparken, eş zamanlı olarak gerçek dünya problemlerine çözümler üretmeyi hedefliyorum. Teknolojik literatürü küresel ölçekte takip edebilmek adına İngilizce hazırlık sürecimi başarıyla tamamladım ve şu an aldığım teorik eğitimi pratikle birleştiriyorum.
+                    </p>
+                    <p>
+                        Yazılım dünyasında beni en çok heyecanlandıran şey, sistemlerin görünmeyen kahramanı olan backend mimarileri. Python ve Java ekosistemlerinde projeler üretirken; geliştirdiğim çözümlerin sadece arka planda güçlü kalmasını değil, kullanıcıya modern ve hızlı arayüzlerle ulaşmasını da önemsiyorum. Bu motivasyonla, HSD bünyesindeki teknik ekipte yer alarak aktif proje geliştirme süreçlerinde ve takım çalışmasının içinde yer alıyorum.
+                    </p>
+                    <p>
+                        Öğrenme çevikliğimi yüksek tutarak, sürekli değişen bu sektörde her gün yeni bir teknoloji deneyimlemek ve her projede daha temiz, sürdürülebilir kod yazmak en büyük motivasyonum.
+                    </p>
+
+                    <div class="about-meta">
+                        <div>
+                            <h3 class="meta-title"><i class="fa-solid fa-graduation-cap"></i> Eğitim</h3>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2025 — Devam Ediyor</span>
+                                <h4>Bolu Abant İzzet Baysal Üniversitesi</h4>
+                                <p>Bilgisayar Mühendisliği (2. Sınıf)</p>
+                                <p>GPA: 3.39</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2024 — 2025</span>
+                                <h4>İngilizce Hazırlık Programı</h4>
+                                <p>B1+ seviyesinde başarıyla tamamlandı</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="meta-title"><i class="fa-solid fa-briefcase"></i> Deneyim</h3>
+                            <div class="timeline-item">
+                                <span class="timeline-date">Nisan 2025 — İstanbul (Uzaktan)</span>
+                                <h4>FirstBite Academy — Tıkla Gelsin & Fiyuu</h4>
+                                <p>FoodTech sektörünün liderlerinden operasyon, teknoloji ve müşteri deneyimi süreçlerini vaka analizleri üzerinden deneyimledim.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">02 — Yetenekler</span>
+                    <h2 class="section-title">Kullandığım teknolojiler</h2>
+                    <p class="section-desc">Backend odaklı stack; API, veri ve kalite süreçleriyle destekleniyor.</p>
+                </div>
+                <div class="skills-grid stagger">
+                    <article class="skill-group reveal-item">
+                        <h3><i class="fa-solid fa-server"></i> Backend Mimarisi</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Spring Boot</span>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal-item">
+                        <h3><i class="fa-solid fa-plug"></i> API & Entegrasyon</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">REST</span>
+                            <span class="skill-tag">JSON</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">JWT</span>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal-item">
+                        <h3><i class="fa-solid fa-code"></i> Frontend Geliştirme</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal-item">
+                        <h3><i class="fa-solid fa-database"></i> Veritabanı Yönetimi</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">SQLite</span>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal-item">
+                        <h3><i class="fa-solid fa-chart-line"></i> Veri Bilimi / Analitik</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Matplotlib</span>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal-item">
+                        <h3><i class="fa-solid fa-vial"></i> Test & Kalite</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JUnit</span>
+                            <span class="skill-tag">pytest</span>
+                            <span class="skill-tag">Postman Collections</span>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal-item">
+                        <h3><i class="fa-solid fa-toolbox"></i> DevOps & Araçlar</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git / GitHub</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">03 — Projeler</span>
+                    <h2 class="section-title">Seçilmiş çalışmalar</h2>
+                </div>
+                <div class="projects-grid stagger">
+                    {% for project in projects %}
+                    <article class="project-card reveal-item">
+                        <div class="project-media">
+                            {% if project.display_image_url %}
+                                <img src="{{ project.display_image_url }}" alt="{{ project.title }}">
+                            {% else %}
+                                <div class="project-placeholder"><i class="fa-solid fa-folder-open"></i></div>
+                            {% endif %}
+                        </div>
+                        <div class="project-body">
+                            <h3>{{ project.title }}</h3>
+                            <p>{{ project.description }}</p>
+                            {% if project.tech_list %}
+                            <div class="project-techs">
+                                {% for tech in project.tech_list %}
+                                    <span class="project-tech">{{ tech }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            {% if project.link %}
+                                <a href="{{ project.link }}" target="_blank" rel="noopener" class="btn btn-secondary">
+                                    Projeyi İncele <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </article>
+                    {% empty %}
+                    <div class="empty-state">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <h3>Henüz proje eklenmemiş</h3>
+                        <p>Django Admin panelinden yeni projeler ekleyebilirsiniz.</p>
+                        <a href="/admin" target="_blank" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Proje Ekle</a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">04 — İletişim</span>
+                    <h2 class="section-title">Birlikte çalışalım</h2>
+                    <p class="section-desc">İş birliği, staj veya proje hakkında yazabilirsiniz.</p>
+                </div>
+                <div class="contact-grid stagger">
+                    <aside class="contact-panel reveal-item">
+                        <h3>İrtibat bilgileri</h3>
+                        <p>Mesaj bırakın, en kısa sürede dönüş yapayım.</p>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <strong>E-posta</strong>
+                                <span>mermerberkx@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <strong>Konum</strong>
+                                <span>Ankara, Türkiye</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <strong>Telefon</strong>
+                                <span>+90 531 026 03 19</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <strong>Sosyal</strong>
+                            <div class="hero-social">
+                                <a href="https://github.com/BerkMermer" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/berkcoskunmermer/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="mailto:mermerberkx@gmail.com" aria-label="E-posta"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="contact-form reveal-item">
+                        <h3>Mesaj gönder</h3>
+                        <form id="contact-form" method="POST" action="{{ formspree_url }}" data-endpoint="{{ formspree_url }}">
+                            <input type="hidden" name="_subject" value="Portfolyo iletişim formu">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="id_name">Adınız Soyadınız</label>
+                                    {{ form.name }}
+                                </div>
+                                <div class="form-group">
+                                    <label for="id_email">E-posta Adresiniz</label>
+                                    {{ form.email }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_subject">Konu</label>
+                                {{ form.subject }}
+                            </div>
+                            <div class="form-group">
+                                <label for="id_message">Mesajınız</label>
+                                {{ form.message }}
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Mesajı Gönder <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div id="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Berk Coşkun Mermer</p>
+            <small>Django · SQLite</small>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTopBtn" type="button" title="Yukarı çık" aria-label="Yukarı çık">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="{% static 'portfolyo/js/portfolio.js' %}?v=3"></script>
+</body>
+</html>

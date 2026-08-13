@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f6f5f2"/>
+  <rect x="160" y="180" width="1280" height="640" rx="20" fill="#ffffff" stroke="rgba(28,27,25,0.1)"/>
+  <rect x="160" y="180" width="1280" height="72" fill="#eeece8"/>
+  <circle cx="210" cy="216" r="8" fill="#c4c2bc"/>
+  <circle cx="238" cy="216" r="8" fill="#c4c2bc"/>
+  <circle cx="266" cy="216" r="8" fill="#c4c2bc"/>
+  <text x="800" y="430" text-anchor="middle" fill="#1c1b19" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="600">Personal Portfolio</text>
+  <text x="800" y="510" text-anchor="middle" fill="#2c5f52" font-family="Segoe UI, Arial, sans-serif" font-size="28">Django, Python, SQLite</text>
+  <text x="800" y="590" text-anchor="middle" fill="#6b6964" font-family="Segoe UI, Arial, sans-serif" font-size="22">Berk Coskun Mermer</text>
+</svg>

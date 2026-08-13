@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: berkmermer
+    runtime: python
+    buildCommand: pip install -r requirements.txt && python portfolio/manage.py collectstatic --noinput
+    startCommand: python portfolio/manage.py migrate --noinput && gunicorn --chdir portfolio mysite.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.0"
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        sync: false
+      - key: CSRF_TRUSTED_ORIGINS
+        sync: false
+      - key: FORMSPREE_URL
+        sync: false
